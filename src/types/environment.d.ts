@@ -7,6 +7,7 @@ declare global {
       CLIENT_SECRET: string
       REDDIT_USER: string
       REDDIT_PASS: string
+      TARGET_USER: string
     }
   }
 }

@@ -12,3 +12,7 @@ const r: Snoowrap = new Snoowrap({
 })
 
 const client = new Snoowrap(r)
+
+if (!!process.env.TARGET_USER) {
+  client.getUser(process.env.TARGET_USER).getComments().then(console.log)
+}
